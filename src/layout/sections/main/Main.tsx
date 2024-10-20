@@ -22,7 +22,7 @@ export const Main = () => {
 
     );
 };
-const StyledMain = styled.div`
+const StyledMain = styled.section`
   min-height: 100vh;
   background-color: rgba(220, 20, 60, 0.42);
 `
