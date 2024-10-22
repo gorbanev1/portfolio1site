@@ -21,9 +21,8 @@ const SkillTitle = styled.div`
 `
 const SkillText = styled.p`
 `
-const StyledSkill = styled.p`
-  width: 30%;
-  background-color: #a85454;
-  margin: 10px;
+const StyledSkill = styled.div`
+  width: 380px;
+  padding: 62px 20px 40px 
 `
 
