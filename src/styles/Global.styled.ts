@@ -22,6 +22,7 @@ export const GlobalStyled = createGlobalStyle`
 
   a {
     text-decoration: none;
+    color: ${theme.colors.font}
   }
   ul{
     list-style: none;
@@ -32,6 +33,8 @@ export const GlobalStyled = createGlobalStyle`
   button {
     background-color: unset;
     border: none;
+    cursor: pointer;
+    color: ${theme.colors.font};
   }
   section:nth-of-type(odd){
     background-color: ${theme.colors.primaryBg};
@@ -50,6 +53,8 @@ export const GlobalStyled = createGlobalStyle`
   p{
     font-weight: 400;
     font-size: 14px;
+    line-height: 1.4;
+
   }
 
 `

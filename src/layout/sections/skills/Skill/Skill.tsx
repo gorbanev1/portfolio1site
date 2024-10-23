@@ -39,7 +39,6 @@ const SkillText = styled.p`
   text-align: center;
   font-size: 14px;
   font-weight: 400;
-  line-height: 1.4;
 `
 
 const IconWrapper = styled.div`
