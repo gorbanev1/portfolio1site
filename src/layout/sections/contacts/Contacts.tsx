@@ -22,6 +22,7 @@ export const Contact = () => {
 };
 
 const StyledContacts = styled.section`
+    
 `
 
 const StyledForm = styled.form`
