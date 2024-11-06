@@ -26,7 +26,13 @@ export const MobileMenu = (props: { menuItems: Array<string> }) => {
         </StyledMobileMenu>
     );
 };
+const StyledMobileMenu = styled.nav`
+    display: none;
+    @media ${theme.media.tablet} {
+      display: block;
+    }
 
+`
 const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
   position: fixed;
   top: 0;
@@ -52,16 +58,7 @@ ul {
   flex-direction: column;
 }
 `
-const StyledMobileMenu = styled.nav`
-  ul {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    @media ${theme.media.mobile} {
-      display: none
-    }
-  }
-`
+
 
 const Link = styled.a`
   color: #7572D5;
@@ -125,26 +122,27 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
   rigth: -100px;
   width: 200px;
   height: 200px;
+  z-index: 999999999;
 
   span {
     display: block;
     width: 36px;
     height: 2px;
-    color: ${theme.colors.font};
+    background-color: ${theme.colors.font};
     position: absolute;
     left: 40px;
     bottom: 50px;
   }
 
   ${props => props.isOpen && css<{ isOpen: boolean }>`
-    color: rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0);
   `}
   &::before {
     content: "";
     display: block;
     width: 36px;
     height: 2px;
-    color: ${theme.colors.font};
+    background-color: ${theme.colors.font};
     position: absolute;
     transform: translateY(-10px);
 
@@ -158,7 +156,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
     display: block;
     width: 24px;
     height: 2px;
-    color: ${theme.colors.font};
+    background-color: ${theme.colors.font};
     position: absolute;
     transform: translateY(10px);
     ${props => props.isOpen && css<{ isOpen: boolean }>`

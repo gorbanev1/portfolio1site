@@ -13,7 +13,7 @@ export const Header = () => {
             <Container>
                 <FlexWrapper justify={'space-between'} align={'center'}>
                     <Logo/>
-                    <MobileMenu menuItems={items}/>
+                    <HeaderMenu menuItems={items}/>
                     <MobileMenu menuItems={items}/>
 
                 </FlexWrapper>
