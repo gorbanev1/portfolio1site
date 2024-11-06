@@ -59,6 +59,59 @@ ul {
 }
 `
 
+const BurgerButton = styled.button<{ isOpen: boolean }>`
+  position: fixed;
+  top: -100px;
+  rigth: -100px;
+  width: 200px;
+  height: 200px;
+  z-index: 999999999;
+
+  span {
+    display: block;
+    width: 36px;
+    height: 2px;
+    background-color: ${theme.colors.font};
+    position: absolute;
+    left: 40px;
+    bottom: 50px;
+  
+
+  ${props => props.isOpen && css<{ isOpen: boolean }>`
+    background-color: rgba(255, 255, 255, 0);
+  `}
+  &::before {
+    content: "";
+    display: block;
+    width: 36px;
+    height: 2px;
+    background-color: ${theme.colors.font};
+    position: absolute;
+    transform: translateY(-10px);
+
+    ${props => props.isOpen && css<{ isOpen: boolean }>`
+      transform: rotate(-45deg) translateY(0);
+    `}
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: ${theme.colors.font};
+    position: absolute;
+    transform: translateY(10px);
+    ${props => props.isOpen && css<{ isOpen: boolean }>`
+      transform: rotate(45deg) translateY(0);
+      width: 36px;
+    `}
+
+  }
+`
+
+
+
 
 const Link = styled.a`
   color: #7572D5;
@@ -115,54 +168,4 @@ const ListItem = styled.li`
 
   }
 
-`
-const BurgerButton = styled.button<{ isOpen: boolean }>`
-  position: fixed;
-  top: -100px;
-  rigth: -100px;
-  width: 200px;
-  height: 200px;
-  z-index: 999999999;
-
-  span {
-    display: block;
-    width: 36px;
-    height: 2px;
-    background-color: ${theme.colors.font};
-    position: absolute;
-    left: 40px;
-    bottom: 50px;
-  }
-
-  ${props => props.isOpen && css<{ isOpen: boolean }>`
-    background-color: rgba(255, 255, 255, 0);
-  `}
-  &::before {
-    content: "";
-    display: block;
-    width: 36px;
-    height: 2px;
-    background-color: ${theme.colors.font};
-    position: absolute;
-    transform: translateY(-10px);
-
-    ${props => props.isOpen && css<{ isOpen: boolean }>`
-      transform: rotate (-45deg) translateY(0);
-    `}
-  }
-
-  &::after {
-    content: "";
-    display: block;
-    width: 24px;
-    height: 2px;
-    background-color: ${theme.colors.font};
-    position: absolute;
-    transform: translateY(10px);
-    ${props => props.isOpen && css<{ isOpen: boolean }>`
-      transform: rotate (45deg) translateY(0);
-      width: 36px;
-    `}
-
-  }
 `
