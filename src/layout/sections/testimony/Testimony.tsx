@@ -5,11 +5,13 @@ import {Icon} from '../../../components/icon/Icon';
 import {SectionTitle} from "../../../components/SectionTitle";
 import {Slider} from "../../../components/slider/Slider";
 import {IconWrapper} from '../skills/Skill/Skill';
+import {Container} from "../../../components/Container";
 
 
 export const Testimony = () => {
     return (
         <StyledTestimony>
+            <Container>
             <SectionTitle>Testimony</SectionTitle>
             <FlexWrapper direction={'column'} align={"center"}>
                 <IconWrapper>
@@ -17,6 +19,7 @@ export const Testimony = () => {
                 </IconWrapper>
                 <Slider/>
             </FlexWrapper>
+            </Container>
         </StyledTestimony>
     );
 };
