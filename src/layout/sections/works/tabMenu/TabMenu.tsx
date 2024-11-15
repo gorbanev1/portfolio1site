@@ -23,11 +23,10 @@ const StyledTabMenu = styled.nav`
     display: flex;
     //gap: 20px;
     justify-content: space-between;
-    margin-bottom: 40px;
     max-width: 352px;
     width: 100%;
     border: 1px solid red;
-    margin: ;
+    margin: 0 auto 40px;
   }
 `
 
