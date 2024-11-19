@@ -11,8 +11,12 @@ export const HeaderMenu = (props: { menuItems: Array<string> }) => {
                 {props.menuItems.map((i, index) => {
                     return <ListItem key={index}>
                         <Link href="">{i}
-                            <Mask><span>{i}</span></Mask>
-                            <Mask><span>{i}</span></Mask>
+                            <Mask>
+                                <span>{i}</span>
+                            </Mask>
+                            <Mask>
+                                <span>{i}</span>
+                            </Mask>
                         </Link>
                     </ListItem>
                 })}

@@ -32,17 +32,19 @@ const StyledSlider = styled.div`
 const Slide = styled.div`
   max-width: 500px;
   text-align: center;
+  
 `
 const Text = styled.p`
+  margin-bottom: 5px;
 
 `
 export const Name = styled.span`
-  text-align: center;
+  display: inline-block;
   font-family: "Josefin Sans", sans-serif;
   font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
-  margin: 22px 0 42px
+  margin: 22px 0 32px
 
 `
 const Pagination = styled.div`
