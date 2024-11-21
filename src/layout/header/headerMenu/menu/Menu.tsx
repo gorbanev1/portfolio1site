@@ -1,20 +1,20 @@
 import React from 'react';
-import {s} from './../HeaderMenu_Styles'
+import {S} from './../HeaderMenu_Styles'
 
 export const Menu:React.FC<{menuItems: Array<string>}> = (props: { menuItems: Array<string> }) => {
     return (
         <ul>
             {props.menuItems.map((i, index) => {
-                return <s.MenuItem key={index}>
-                    <s.Link href="">{i}
-                        <s.Mask>
+                return <S.MenuItem key={index}>
+                    <S.Link href="">{i}
+                        <S.Mask>
                             <span>{i}</span>
-                        </s.Mask>
-                        <s.Mask>
+                        </S.Mask>
+                        <S.Mask>
                             <span>{i}</span>
-                        </s.Mask>
-                    </s.Link>
-                </s.MenuItem>
+                        </S.Mask>
+                    </S.Link>
+                </S.MenuItem>
             })}
         </ul>
     );

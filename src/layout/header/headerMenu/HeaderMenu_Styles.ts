@@ -157,7 +157,7 @@ const DesktopMenu = styled.nav`
 `
 
 
-export const s={
+export const S={
     Link,
     MenuItem,
     Mask,
