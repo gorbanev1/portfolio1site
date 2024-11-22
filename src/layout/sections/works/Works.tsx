@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from "styled-components";
 import {SectionTitle} from "../../../components/SectionTitle";
 import {TabMenu} from "./tabMenu/TabMenu";
 import {FlexWrapper} from "../../../components/FlexWrapper";
@@ -7,7 +6,6 @@ import {Work} from "./work/Work";
 import socialImg from '../../../assets/images/Portfolio1.png'
 import timerImg from '../../../assets/images/Portfolio2.png'
 import {Container} from "../../../components/Container";
-import {Link} from "../../../components/Link";
 import {S} from "./Works_Styles"
 
 const WorksItems = ['All','Landing Page','React','Spa']
@@ -32,8 +30,8 @@ export const Works:React.FC = () => {
             <FlexWrapper justify={'space-around'} align={"flex-start"} wrap={"wrap"}>
                 {workData.map((i, index)=>
                      <Work title={i.title}
-                                 text={i.src}
-                                 src={i.text}/>
+                                 text={i.text}
+                                 src={i.src}/>
                 )}
                {/* <Work title={"Social Network"}
                       src={socialImg}

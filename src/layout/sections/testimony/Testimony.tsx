@@ -8,7 +8,7 @@ import {S} from '../skills/Skill/Skills_Styles';
 import {Container} from "../../../components/Container";
 
 
-export const Testimony = () => {
+export const Testimony:React.FC = () => {
     return (
         <StyledTestimony>
             <Container>
@@ -26,7 +26,8 @@ export const Testimony = () => {
 
 const StyledTestimony = styled.section`
   min-height: 50vh;
-  background-color: rgba(48, 176, 153, 0.61);
+  background-color: rgba(48, 176, 153, 0.61);\
+  
   ${S.IconWrapper}{
     margin: 28px 0 72px;
   }
