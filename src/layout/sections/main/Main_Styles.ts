@@ -47,9 +47,12 @@ const Photo = styled.img`
   }
 `
 const MainTitle = styled.h1`
-    /*  ${font({weight: 400, Fmax: 27, Fmin: 6})}*/
-  font-size: 27px;
-  font-weight: 400;
+  ${font({weight: 400, Fmax: 27, Fmin: 20})}
+  p{
+    display: none;
+  }
+/*  font-size: 27px;
+  font-weight: 400;*/
 `
 
 const Name = styled.h2`
