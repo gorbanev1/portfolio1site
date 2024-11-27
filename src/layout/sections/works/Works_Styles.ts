@@ -41,7 +41,6 @@ const ImageWrapper = styled.div`
       width: 100%;
       height: 100%;
     }
-    
     &::before {
       content: "";
       position: absolute;
