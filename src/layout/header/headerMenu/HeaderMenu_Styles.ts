@@ -1,7 +1,8 @@
+import { Link } from "react-scroll";
 import styled, {css} from "styled-components";
 import {theme} from "../../../styles/Theme";
 
-const Link = styled.a`
+const NavLink = styled(Link)`
   color: #7572D5;
   text-align: center;
   font-family: "Josefin Sans", sans-serif;
@@ -158,7 +159,7 @@ const DesktopMenu = styled.nav`
 
 
 export const S={
-    Link,
+    NavLink,
     MenuItem,
     Mask,
     MobileMenu,
