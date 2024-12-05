@@ -35,9 +35,9 @@ export const Slider = () =>
     <S.Slider>
         <AliceCarousel mouseTracking
                        items={items}
-                       renderPrevButton={()=>{
+                      /* renderPrevButton={()=>{
                            return <Icon iconId={"codeSvg"}/>
-                       }}
+                       }}*/
         />
     </S.Slider>
 

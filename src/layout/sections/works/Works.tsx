@@ -45,6 +45,34 @@ const worksData = [
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
         type: "react",
         id: 2
+    },    {
+        title: "Social Network",
+        src: socialImg,
+        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        type: "spa",
+        id: 3
+
+    },
+    {
+        title: "Timer",
+        src: timerImg,
+        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        type: "react",
+        id: 4
+    },    {
+        title: "Social Network",
+        src: socialImg,
+        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        type: "spa",
+        id: 5
+
+    },
+    {
+        title: "Timer",
+        src: timerImg,
+        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        type: "react",
+        id: 6
     },
 ]
 export const Works: React.FC = () => {
@@ -75,18 +103,20 @@ export const Works: React.FC = () => {
                 />
                 <FlexWrapper justify={'space-around'} align={"flex-start"} wrap={"wrap"}>
                     <AnimatePresence>
-                        {filteredWorks.map((i, index) => {
+                        {filteredWorks.map((w, index) => {
                                 return (
-                                    <motion.div
+                                    <motion.div style={{ width: "400px",
+                                        flexGrow: 1, maxWidth: "540px"}}
+                                    layout
                                     initial={{opacity:0}}
                                     animate={{opacity:1 }}
                                     exit={{opacity: 0}}
-                                    key={i.id}
+                                    key={w.id}
                                     >
-                                        <Work title={i.title}
-                                              text={i.text}
-                                              src={i.src}
-                                              key={i.id}
+                                        <Work title={w.title}
+                                              text={w.text}
+                                              src={w.src}
+                                              key={w.id}
                                         />
                                     </motion.div>
                                 )
