@@ -3,7 +3,7 @@ import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import {S} from './Slider_Styles';
 import "./../../styles/slider.css"
-import Icon from "../icon/Icon";
+
 
 type SlidePropsType={
     text: string
